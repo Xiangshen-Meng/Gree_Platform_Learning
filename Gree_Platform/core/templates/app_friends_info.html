@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} Welcome to Gree Platform Game ! {% endblock %}
+{% block content %}
+<h2> Friends Information ! </h2>
+
+<table border="1">
+	<tr>
+		<th> Image </th>
+		<th> Nickname </th>
+		<th> Region </th>
+		<th> Brithday </th>
+	</tr>
+	
+	{% if friends_list %}
+		{% for friend in friends_list %}
+			<tr>
+				<td><img src={{friend.thumbnailUrl}}></img></td>
+				<td>{{friend.nickname}}</td>
+				<td>{{friend.region}}</td>
+				<td>{{friend.birthday}}</td>
+			</tr>
+		{% endfor %}
+	{% else %}
+		<tr>
+			<td>Sorry ! You have no friends !</td>
+		</tr>
+	{% endif %}
+	
+</table>
+
+{% endblock %}

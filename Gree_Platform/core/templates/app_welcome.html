@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %} Welcome to Gree Platform Game ! {% endblock %}
+{% block content %}
+<h2> {{user_info.nickname}} welcome to  Gree Platform Learning! </h2>
+<h2> Here is your information ! </h2>
+
+<table>
+	<tr>
+		<td>Image:</td>
+		<td><img src={{user_info.thumbnailUrl}}></img></td>
+	</tr>
+	<tr>
+		<td>User id:</td>
+		<td>{{user_info.id}}</td>
+	</tr>
+	<tr>
+		<td>Nickname:</td>
+		<td>{{user_info.nickname}}</td>
+	</tr>
+	<tr>
+		<td>Grade:</td>
+		<td>{{user_info.userGrade}}</td>
+	</tr>
+	<tr>
+		<td>Region:</td>
+		<td>{{user_info.region}}</td>
+	</tr>
+	<tr>
+		<td>Birthday:</td>
+		<td>{{user_info.birthday}}</td>
+	</tr>
+</table>
+
+<p><a id="friends" href="/friends_info"> Go and see about your Friends !</a></p>
+
+{% endblock %}
