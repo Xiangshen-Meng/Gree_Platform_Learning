@@ -1,19 +1,10 @@
-Django-testapp, a template for a Google App Engine app 
-=========================================================
+Gree Platform Learning Project, Using Django (django-non-relational)
+======================================================================
 
-Use django-testapp as a template for creating a Google App Engine
-app with django-nonrel. Run `build.sh` to download the necessary
-dependencies.
+See `requirements.txt` to download the necessary dependencies.
+Use django-nonrel, for more information : http://www.allbuttonspressed.com/projects/django-nonrel 
+Use Requests, for more information : http://docs.python-requests.org/en/latest/
 
-Contributing
-------------
-You are highly encouraged to participate in the development, simply use
-GitHub's fork/pull request system.
+This Project is for learning Gree Platform, it is just a 'Hello World' like web page.
 
-If you don't like GitHub (for some reason) you're welcome
-to send regular patches to the mailing list.
-
-:Mailing list: http://groups.google.com/group/django-non-relational
-:Bug tracker: https://github.com/django-nonrel/django-testapp/issues
-:License: 3-clause BSD, see LICENSE
-:Keywords: django, app engine, mongodb, orm, nosql, database, python
+:Mail: wqnnjm@gmail.com
